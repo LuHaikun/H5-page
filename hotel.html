@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />  
+<!-- 设置缩放 -->  
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />  
+<!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） -->  
+<meta name="apple-mobile-web-app-capable" content="yes" />  
+<!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->  
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />  
+<!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 -->  
+<meta name="format-detection"content="telephone=no, email=no" /> 
+<title>首届中国卫生健康科技创新发展大会</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript">
+	window.onload = function () {
+    var arrows = document.querySelectorAll(".right-arrow")
+    var modals = document.querySelectorAll(".main-modal")
+    var modalContents = document.querySelectorAll(".main-modal-content")
+    arrows.forEach(function(arrow) {
+      arrow.addEventListener("click", function (e) {
+        var type = this.getAttribute('type')
+				switch (type) {
+          case "1":
+            showModal(".hotel-name")
+            break
+          case "2":
+            showModal(".hotel-type")
+            break
+          case "3":
+            showModal(".hotel-distance")
+            break
+          case "4":
+            showModal(".hotel-level")
+            break 
+        }
+      });
+    })
+
+    modals.forEach(function(modal) {
+      modal.addEventListener("click", function (e) {
+        this.style.display = "none"
+      });
+    })
+
+    modalContents.forEach(function(content) {
+      content.addEventListener("click", function (e) {
+        window.event? window.event.cancelBubble = true : e.stopPropagation();
+        if(e.preventDefault){
+          e.preventDefault();
+        }else{
+          window.event.returnValue == false;
+        }
+      });
+    })
+
+		var showModal = function (className) {
+			var modal = document.querySelector(className)
+      modal.style.display = "block"
+		}
+	}
+</script>
+</head>
+<body>
+<header>
+  <img class="back" src="assets/images/fanhui.png" />
+  <span class="font_36 font_white">酒店住宿登记</span>
+  <div class="toolbar-group">
+    <img class="toolbar" src="assets/images/zhankai_1.png" />
+    <ul class="dropdown-menu" role="menu">
+      <li><img src="assets/images/shouye.png" /><a href="#">首页</a></li>
+      <li><img src="assets/images/news_1.png" /><a href="#">新闻大会</a></li>
+      <li><img src="assets/images/zuzhijigou_1.png" /><a href="#">组织机构</a></li>
+      <li><img src="assets/images/huiyiyichen_1.png" /><a href="#">大会日程</a></li>
+      <li><img src="assets/images/zhanlan.png" /><a href="#">展览展示</a></li>
+      <li><img src="assets/images/video.png" /><a href="#">视频回顾</a></li>
+      <li><img src="assets/images/zhinan_1.png" /><a href="#">会议指南</a></li>
+      <li><img src="assets/images/lianxowomen_2.png" /><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+</header>
+<div class="main-hotel">
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">选择酒店</span>
+    <div class="main-hotel-content">
+      <span>请选择酒店</span>
+      <img src="assets/images/right.png" class="right-arrow" type="1" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">星级</span>
+    <div class="main-hotel-content">
+      <span>请选择酒店等级</span>
+      <img src="assets/images/right.png" class="right-arrow" type="2" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">距离</span>
+    <div class="main-hotel-content">
+      <span>请选择距离会场车程</span>
+      <img src="assets/images/right.png" class="right-arrow" type="3" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">房型</span>
+    <div class="main-hotel-content">
+      <span>请选择房型</span>
+      <img src="assets/images/right.png" class="right-arrow" type="4" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">入住方式</span>
+    <div class="form-item-group">
+      <input type="radio" name="live-type" checked=checked><span class="margin-left_8 font_32">单住</span>
+      <input type="radio" name="live-type" class="margin-left_48"><span class="margin-left_8 font_32">合住</span>
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">入住时间</span>
+    <div class="main-hotel-content">
+      <span>请选择入住时间</span>
+      <img src="assets/images/date.png" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-item">
+    <span class="main-hotel-label">退房时间</span>
+    <div class="main-hotel-content">
+      <span>请选择退房时间</span>
+      <img src="assets/images/date.png" alt="">
+    </div>
+  </div>
+  <div class="main-hotel-remark">
+    <span class="hotel-remark-label">备注</span>
+    <div class="hotel-remark-content">
+      <textarea class="hotel-remark-textarea font_32" rows="6"></textarea>
+      <div class="hotel-remark-footer"><span>0/100</span></div>
+    </div>
+  </div>
+  <div class="main-directions">
+    <span>说明</span>
+    <span>(1) 酒店正式确定后不能更改</span>
+    <span>(2) 如有特殊原因，请备注</span>
+  </div>
+  <div class="main-sub hotel-sub-main">
+		<a href="#" class="font_32 font_white">确认报名</a>
+  </div>
+</div>
+<div class="main-modal hotel-name">
+  <div class="main-modal-warpper">
+    <div class="main-modal-content">
+      <div class="modal-content-item">
+        <span>美罗酒店（深圳罗湖大剧院万象城店）</span>
+      </div>
+      <div class="modal-content-item">
+        <span>深圳登喜路国际大酒店</span>
+      </div>
+    </div>
+    <div class="main-modal-footer"><span>确定</span></div>
+  </div>
+</div>
+<div class="main-modal hotel-type">
+  <div class="main-modal-warpper">
+    <div class="main-modal-content">
+      <div class="modal-content-item">
+        <span>标准间（430元）</span>
+      </div>
+      <div class="modal-content-item">
+        <span>单人间（420元）</span>
+      </div>
+      <div class="modal-content-item">
+        <span>家庭房（430元）</span>
+      </div>
+    </div>
+    <div class="main-modal-footer"><span>确定</span></div>
+  </div>
+</div>
+<div class="main-modal hotel-distance">
+  <div class="main-modal-warpper">
+    <div class="main-modal-content">
+      <div class="modal-content-item">
+        <span>3Km</span>
+      </div>
+      <div class="modal-content-item">
+        <span>4Km</span>
+      </div>
+    </div>
+    <div class="main-modal-footer"><span>确定</span></div>
+  </div>
+</div>
+<div class="main-modal hotel-level">
+  <div class="main-modal-warpper">
+    <div class="main-modal-content">
+      <div class="modal-content-item">
+        <span>四星</span>
+      </div>
+      <div class="modal-content-item">
+        <span>五星</span>
+      </div>
+    </div>
+    <div class="main-modal-footer"><span>确定</span></div>
+  </div>
+</div>
+</body>
+</html>

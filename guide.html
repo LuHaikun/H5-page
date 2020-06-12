@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />  
+<!-- 设置缩放 -->  
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />  
+<!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） -->  
+<meta name="apple-mobile-web-app-capable" content="yes" />  
+<!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->  
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />  
+<!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 -->  
+<meta name="format-detection"content="telephone=no, email=no" /> 
+<title>首届中国卫生健康科技创新发展大会</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript">
+  window.onload = function () {
+    var tabs = document.querySelectorAll(".nav-tab")
+    var panes = document.querySelectorAll(".tab-pane")
+    tabs.forEach(function(tab) {
+      tab.addEventListener("click", function (e) {
+				tabs.forEach(function(tab) { tab.className = "nav-tab" })
+				this.className = "nav-tab nav-tab-active"
+				var refId = this.getAttribute("ref")
+				panes.forEach(function(pane) {
+					var paneId = pane.getAttribute("id")
+					if (refId === paneId) {
+						pane.className = "tab-pane active"
+					} else {
+						pane.className = "tab-pane"
+					}
+				})
+      }, true);
+    })
+  }
+</script>
+</head>
+<body>
+<header>
+  <img class="back" src="assets/images/fanhui.png" />
+  <span class="font_36 font_white">医学科技创新大赛</span>
+  <div class="toolbar-group">
+    <img class="toolbar" src="assets/images/zhankai_1.png" />
+    <ul class="dropdown-menu" role="menu">
+      <li><img src="assets/images/shouye.png" /><a href="#">首页</a></li>
+      <li><img src="assets/images/news_1.png" /><a href="#">新闻大会</a></li>
+      <li><img src="assets/images/zuzhijigou_1.png" /><a href="#">组织机构</a></li>
+      <li><img src="assets/images/huiyiyichen_1.png" /><a href="#">大会日程</a></li>
+      <li><img src="assets/images/zhanlan.png" /><a href="#">展览展示</a></li>
+      <li><img src="assets/images/video.png" /><a href="#">视频回顾</a></li>
+      <li><img src="assets/images/zhinan_1.png" /><a href="#">会议指南</a></li>
+      <li><img src="assets/images/lianxowomen_2.png" /><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+</header>
+<div class="main-guide">
+	<div class="nav-tabs">
+		<div class="nav-tab nav-tab-active" ref="tab-pane-one">
+			<span class="font_32">常见问题</span>
+		</div>
+		<div class="nav-tab" ref="tab-pane-two">
+			<span class="font_32">交通指南</span>
+		</div>
+		<div class="nav-tab" ref="tab-pane-three">
+			<span class="font_32">系统管理</span>
+		</div>
+	</div>
+	<div class="tab-content">
+		<div class="tab-pane active" id="tab-pane-one">
+			<div class="guide-pane-warpper">
+				<div class="guide-pane-item">
+					<h3>Q1:大会组织联系方式</h3>
+					<span>邮箱：8610-56381692，info@conference.cn</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q2: GNTC 2019官方购票地址是什么？</h3>
+					<span>A:请登录大会官网: www.theGNTC.com,点击"立即报名"进行购票。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q3:购票是否有优惠？</h3>
+					<span>A:满5张即可即可赠送1张,请点击"立即报名"获取详细信息。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>04:如何开具发票,发票的内容可以写什么？</h3>
+					<span>A:开具发票请联系大会组委会,同时提供抬头、税号、开户行、账号、地址、电话、邮寄地址和联系人等信息。发票内容为会议费。</span>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="tab-pane-two">
+			<div class="guide-pane-warpper">
+				<div class="guide-pane-item">
+					<h3>Q1:大会组织联系方式</h3>
+					<span>邮箱：8610-56381692，info@conference.cn</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q2: GNTC 2019官方购票地址是什么？</h3>
+					<span>A:请登录大会官网: www.theGNTC.com,点击"立即报名"进行购票。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q3:购票是否有优惠？</h3>
+					<span>A:满5张即可即可赠送1张,请点击"立即报名"获取详细信息。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>04:如何开具发票,发票的内容可以写什么？</h3>
+					<span>A:开具发票请联系大会组委会,同时提供抬头、税号、开户行、账号、地址、电话、邮寄地址和联系人等信息。发票内容为会议费。</span>
+				</div>
+			</div>
+		</div>
+		<div class="tab-pane" id="tab-pane-three">
+			<div class="guide-pane-warpper">
+				<div class="guide-pane-item">
+					<h3>Q1:大会组织联系方式</h3>
+					<span>邮箱：8610-56381692，info@conference.cn</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q2: GNTC 2019官方购票地址是什么？</h3>
+					<span>A:请登录大会官网: www.theGNTC.com,点击"立即报名"进行购票。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>Q3:购票是否有优惠？</h3>
+					<span>A:满5张即可即可赠送1张,请点击"立即报名"获取详细信息。</span>
+				</div>
+				<div class="guide-pane-item">
+					<h3>04:如何开具发票,发票的内容可以写什么？</h3>
+					<span>A:开具发票请联系大会组委会,同时提供抬头、税号、开户行、账号、地址、电话、邮寄地址和联系人等信息。发票内容为会议费。</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

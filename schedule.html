@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />  
+<!-- 设置缩放 -->  
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />  
+<!-- 可隐藏地址栏，仅针对IOS的Safari（注：IOS7.0版本以后，safari上已看不到效果） -->  
+<meta name="apple-mobile-web-app-capable" content="yes" />  
+<!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->  
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />  
+<!-- IOS中禁用将数字识别为电话号码/忽略Android平台中对邮箱地址的识别 -->  
+<meta name="format-detection"content="telephone=no, email=no" /> 
+<title>首届中国卫生健康科技创新发展大会</title>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+<script type="text/javascript" src="assets/js/index.js"></script>
+<script type="text/javascript">
+  window.onload = function () {
+    var panels = document.querySelectorAll(".panel-default")
+    var collapses = document.querySelectorAll(".collapse-icon")
+    collapses.forEach(function(collapse) {
+      collapse.addEventListener("click", function (e) {
+        const parent = this.closest(".panel-default")
+        if (parent.className.indexOf("active") > -1) {
+          parent.className = "panel-default"
+        } else {
+          panels.forEach(function(panel) {
+            panel.className = "panel-default"
+          })
+          parent.className = parent.className + ' active'
+        }
+      }, true);
+    })
+  }
+</script>
+</head>
+<body>
+<header>
+  <img class="back" src="assets/images/fanhui.png" />
+  <span class="font_36 font_white">会议议程</span>
+  <div class="toolbar-group">
+    <img class="toolbar" src="assets/images/zhankai_1.png" />
+    <ul class="dropdown-menu" role="menu">
+      <li><img src="assets/images/shouye.png" /><a href="#">首页</a></li>
+      <li><img src="assets/images/news_1.png" /><a href="#">新闻大会</a></li>
+      <li><img src="assets/images/zuzhijigou_1.png" /><a href="#">组织机构</a></li>
+      <li><img src="assets/images/huiyiyichen_1.png" /><a href="#">大会日程</a></li>
+      <li><img src="assets/images/zhanlan.png" /><a href="#">展览展示</a></li>
+      <li><img src="assets/images/video.png" /><a href="#">视频回顾</a></li>
+      <li><img src="assets/images/zhinan_1.png" /><a href="#">会议指南</a></li>
+      <li><img src="assets/images/lianxowomen_2.png" /><a href="#">联系我们</a></li>
+    </ul>
+  </div>
+</header>
+<div class="main-schedule">
+  <div class="panel-group" id="accordion">
+    <div class="panel-default active">
+      <div class="panel-heading">
+        <div class="panel-heading-forum"></div>
+        <h4 class="panel-title">主论坛</h4>
+        <div class="collapse-icon"></div>
+        <!-- <img class="collapse-icon" src="assets/images/fanhui.png" /> -->
+      </div>
+      <div class="panel-collapse">
+        <div class="panel-body">
+          <div class="steps">
+            <div class="steps-item steps-item-dot">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon"></div>
+                <div class="steps-item-content">
+                  <div class="steps-item-title">2020/11/01</div>
+                  <div class="steps-item-title">上午</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-dot">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot"></span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-theme">
+                    <span>开幕式</span>
+                    <span>上午</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-radio">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot">
+                      <span class="steps-icon-dot-circle"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-title">8:00-8:50</div>
+                  <div class="steps-item-title">暖场视频</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-radio">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot">
+                      <span class="steps-icon-dot-circle"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-title">8:50-9:00</div>
+                  <div class="steps-item-title">开幕仪式</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-dot">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot"></span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-theme">
+                    <span>主论坛</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-radio">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot">
+                      <span class="steps-icon-dot-circle"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-title">9:00-9:30</div>
+                  <div class="steps-item-title">领导致辞</div>
+                  <div class="steps-item-subtitle">卫健委、科技部、 广东省、深圳市领导、国际机构代表致辞</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-radio">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot">
+                      <span class="steps-icon-dot-circle"></span>
+                    </span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-title">9:30-11:30</div>
+                  <div class="steps-item-title">主旨演讲</div>
+                  <div class="steps-item-subtitle">中国新药研发的现状与趋势：待定</div>
+                  <div class="steps-item-subtitle">中国医学科研创新现状与未来展望：待定</div>
+                  <div class="steps-item-subtitle">科技创新助力健康中国：待定</div>
+                  <div class="steps-item-subtitle">中国新药研发的现状与趋势：待定</div>
+                  <div class="steps-item-subtitle">全球卫生健康科技的发展与展望：联合国教科文组织/WHO知名专家</div>
+                </div>
+              </div>
+            </div>
+            <div class="steps-item steps-item-dot">
+              <div class="steps-item-container">
+                <div class="steps-item-tail"></div>
+                <div class="steps-item-icon">
+                  <span class="steps-icon">
+                    <span class="steps-icon-dot"></span>
+                  </span>
+                </div>
+                <div class="steps-item-content">
+                  <div class="steps-item-theme">
+                    <span>主论坛</span>
+                    <span>下午</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-medicine"></div>
+        <h4 class="panel-title">新药创制分论坛</h4>
+        <div class="collapse-icon"></div>
+        <!-- <img class="collapse-icon" src="assets/images/fanhui.png" /> -->
+      </div>
+      <div class="panel-collapse">
+        <div class="panel-body">
+          <!-- <h4 class="dashboard-title">2020/11/02</h4>
+          <div class="dashboard-date">
+            <span>上午</span>
+            <span>新药创建分论坛</span>
+          </div>
+          <div class="dashboard-content">
+            <div class="dashboard-content-item">
+              <p>8:30-9:00</p>
+              <p>重大专项</p>
+              <p>"新药创制"重大专项分析</p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="panel-default">
+      <div class="panel-heading">
+        <div class="panel-heading-health"></div>
+        <h4 class="panel-title">传染病与公共卫生分论坛</h4>
+        <div class="collapse-icon"></div>
+        <!-- <img class="collapse-icon" src="assets/images/fanhui.png" /> -->
+      </div>
+      <div class="panel-collapse">
+        <div class="panel-body">
+            <!-- Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+            cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+            vice lomo. -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
